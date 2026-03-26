@@ -56,11 +56,11 @@ print(result.winner_score)      # judge score
 | judge | `judge.py` | Opus judge protocol + schema validation + repair retry |
 | stats | `stats.py` | list_models(), get_stats() observability |
 
-## Relationship to multi-model-orchestrate Skill
+## Relationship to model-debate Skill
 
-This project and the `multi-model-orchestrate` CC skill serve **different layers**:
+This project and the `model-debate` CC skill serve **different layers**:
 
-| | multi-model-orchestrate | model-arena |
+| | model-debate | model-arena |
 |---|---|---|
 | **What** | CC skill for human-in-the-loop multi-model collaboration | Library for automated model competition + routing |
 | **Models** | Opus + Codex + Local 27B (fixed roles) | N local models (dynamic pool, interchangeable) |
@@ -70,7 +70,7 @@ This project and the `multi-model-orchestrate` CC skill serve **different layers
 | **Use case** | Spec design, code review, content writing | Production inference routing (Prism analysis, translation, etc.) |
 
 **They complement each other:**
-- `multi-model-orchestrate` helps **design** the TaskSpec and judge rubric
+- `model-debate` helps **design** the TaskSpec and judge rubric
 - `model-arena` **executes** the competition at runtime, learning which models are best per task
 
 ## Configuration

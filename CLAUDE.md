@@ -42,4 +42,4 @@ All tests use mocked HTTP. No real model inference in test suite.
 ## Integration Points
 
 - **Prism**: `compete_sync()` in `prism/pipeline/analyze.py` for incremental analysis
-- **multi-model-orchestrate skill**: complementary — skill designs specs, arena executes at runtime
+- **model-debate skill**: complementary — skill designs specs, arena executes at runtime
