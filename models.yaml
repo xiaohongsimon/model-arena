@@ -1,0 +1,27 @@
+models:
+  qwen-27b:
+    endpoint: http://127.0.0.1:8002/v1
+    model_name: qwen3.5-27b-distilled
+    api_key: omlx-xxx
+    timeout_s: 90
+    max_input_tokens: 64000
+    max_output_tokens: 4000
+    status: active
+
+  glm-9b:
+    endpoint: http://127.0.0.1:8002/v1
+    model_name: glm-4.7-flash
+    api_key: omlx-xxx
+    timeout_s: 60
+    max_input_tokens: 32000
+    max_output_tokens: 4000
+    status: active
+
+  minimax-m2:
+    endpoint: http://127.0.0.1:8002/v1
+    model_name: minimax-m2.5
+    api_key: omlx-xxx
+    timeout_s: 60
+    max_input_tokens: 128000
+    max_output_tokens: 4000
+    status: active
